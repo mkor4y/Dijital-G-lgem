@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijital Gölgem — Kişisel Sosyal Medya Mahremiyeti Risk Analizi</title>
+    <meta name="description" content="Dijital Gölgem: Verilerden Okunan Bir Sen — Kişisel Sosyal Medya Mahremiyeti Risk Analiz Sonuçları">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated background particles -->
+    <div class="bg-particles" id="bgParticles"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="20" stroke="url(#logoGrad)" stroke-width="2.5" fill="none"/>
+                        <path d="M24 12C17.4 12 12 17.4 12 24s5.4 12 12 12 12-5.4 12-12" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+                        <circle cx="24" cy="24" r="4" fill="url(#logoGrad)"/>
+                        <path d="M24 8v4M24 36v4M8 24h4M36 24h4" stroke="url(#logoGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="8" y1="8" x2="40" y2="40">
+                                <stop stop-color="#6366f1"/>
+                                <stop offset="1" stop-color="#a855f7"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>Dijital Gölgem</h1>
+                    <p>Verilerden Okunan Bir Sen</p>
+                </div>
+            </div>
+            <div class="header-badge">
+                <span class="badge-dot"></span>
+                Mahremiyet Risk Analizi
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Summary Stats -->
+        <div class="stats-bar" id="statsBar"></div>
+
+        <!-- Risk Legend -->
+        <div class="legend-card">
+            <h3>Risk Seviyeleri</h3>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #dc2626 50%, #1a1a2e 50%); border: 2px solid rgba(0,0,0,0.2);"></div>
+                    <div class="legend-info">
+                        <strong>Yüksek Risk (Kırmızı veya Siyah)</strong>
+                        <span>4-5 Evet cevabı</span>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #2563eb 50%, #d97706 50%); border: 2px solid rgba(0,0,0,0.2);"></div>
+                    <div class="legend-info">
+                        <strong>Orta Risk (Mavi veya Sarı)</strong>
+                        <span>3 Evet cevabı</span>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #16a34a; border: 2px solid rgba(0,0,0,0.2);"></div>
+                    <div class="legend-info">
+                        <strong>Az Risk (Yeşil)</strong>
+                        <span>0-2 Evet cevabı</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Labels -->
+        <div class="category-labels">
+            <div class="cat-label cat-1">
+                <div class="cat-icon">🛡️</div>
+                <div>
+                    <strong>Kategori 1 (Soru 1-5)</strong>
+                    <span>Sosyal Etkileşim ve Paylaşım Riskleri</span>
+                </div>
+            </div>
+            <div class="cat-label cat-2">
+                <div class="cat-icon">📍</div>
+                <div>
+                    <strong>Kategori 2 (Soru 6-10)</strong>
+                    <span>Kişisel Bilgi ve Konum Riskleri</span>
+                </div>
+            </div>
+            <div class="cat-label cat-3">
+                <div class="cat-icon">🔓</div>
+                <div>
+                    <strong>Kategori 3 (Soru 11-15)</strong>
+                    <span>Dijital İz ve Veri Sızıntısı Riskleri</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Grid -->
+        <div class="results-grid" id="resultsGrid"></div>
+
+        <!-- Overall Chart -->
+        <div class="chart-section">
+            <h3>Genel Risk Dağılımı</h3>
+            <div class="chart-container" id="chartContainer"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Dijital Gölgem © 2026 — Kişisel Sosyal Medya Mahremiyeti Risk Analizi</p>
+    </footer>
+
+    <!-- Data file (generated by generate.py) -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
